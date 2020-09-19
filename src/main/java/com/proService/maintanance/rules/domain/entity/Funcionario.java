@@ -1,9 +1,11 @@
 package com.proService.maintanance.rules.domain.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.proService.maintanance.core.database.BaseEntity;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
@@ -28,7 +30,8 @@ public class Funcionario extends BaseEntity implements Serializable {
     @ApiModelProperty(value = "Cargo do funcionario", example = "TECNICO", required = true)
     private String cargo;
 
-    @OneToMany(mappedBy = "funcionario")
+    @OneToMany(mappedBy = "funcionario", cascade = CascadeType.ALL)
     @ApiModelProperty(value = "Manutenções realizadas pelo funcionario")
+    @JsonIgnoreProperties({"funcionario", "equipamento"})
     private List<Manutencao> manutencoes;
 }

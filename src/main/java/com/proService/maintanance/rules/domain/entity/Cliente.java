@@ -1,13 +1,11 @@
 package com.proService.maintanance.rules.domain.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.proService.maintanance.core.database.BaseEntity;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
@@ -36,7 +34,8 @@ public class Cliente extends BaseEntity implements Serializable {
     @ApiModelProperty(value = "Email do cliente", example = "gabriel@gmail.com", required = true)
     private String email;
 
-    @OneToMany(mappedBy = "cliente")
     @ApiModelProperty(value = "Equipamentos do cliente")
+    @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)
+    @JsonIgnoreProperties({"cliente"})
     private List<Equipamento> equipamentos;
 }

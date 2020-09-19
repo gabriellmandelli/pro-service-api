@@ -4,5 +4,6 @@ public enum SituacaoManutencao {
     NAO_INICIADO,
     INICIADO,
     PEDENTE,
-    CONCLUIDO
+    CONCLUIDO,
+    ENTREGUE
 }
