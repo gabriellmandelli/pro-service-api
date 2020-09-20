@@ -34,7 +34,7 @@ public class EquipamentoController {
         if(!id.equals(equipamento.getId())){
             return ResponseEntity.badRequest().build();
         }
-        return ResponseEntity.ok(equipamentoService.save(equipamento));
+        return ResponseEntity.ok(equipamentoService.update(equipamento));
     }
 
     @GetMapping(value = "", produces = {MediaType.APPLICATION_JSON_VALUE})

@@ -36,7 +36,7 @@ public class FuncionarioController {
             return ResponseEntity.badRequest().build();
         }
 
-        return ResponseEntity.ok(funcionarioService.save(funcionario));
+        return ResponseEntity.ok(funcionarioService.update(funcionario));
     }
 
     @GetMapping(value = "", produces = {MediaType.APPLICATION_JSON_VALUE})

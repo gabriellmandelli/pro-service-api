@@ -35,7 +35,7 @@ public class ManutencaoController {
             return ResponseEntity.badRequest().build();
         }
 
-        return ResponseEntity.ok(manutencaoService.save(manutencao));
+        return ResponseEntity.ok(manutencaoService.update(manutencao));
     }
 
     @GetMapping(value = "", produces = {MediaType.APPLICATION_JSON_VALUE})

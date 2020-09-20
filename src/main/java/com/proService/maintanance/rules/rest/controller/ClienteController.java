@@ -36,7 +36,7 @@ public class ClienteController {
         if (!id.equals(cliente.getId())){
             return ResponseEntity.badRequest().build();
         }
-        return ResponseEntity.ok(clienteService.save(cliente));
+        return ResponseEntity.ok(clienteService.update(cliente));
     }
 
     @GetMapping(value = "", produces = {MediaType.APPLICATION_JSON_VALUE})
