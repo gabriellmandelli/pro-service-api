@@ -33,13 +33,14 @@ Rodar a aplicação
 ```
 
 - Com a aplicação rodando:
- *  Para acessar a documentação criada com o Swagger [http://localhost:8080/swagger-ui.html#/](http://localhost:8080/swagger-ui.html#/).
- * Para importar no insomnia, selecionar a opção "Import Data" selecionar "From URL" e botar o link [http://localhost:8080/v2/api-docs](http://localhost:8080/v2/api-docs) para ser importado todos os endpoints.
+ * Para acessar a documentação criada com o Swagger [http://localhost:8080/swagger-ui.html#/](http://localhost:8080/swagger-ui.html#/).
+ * Para importar no insomnia, selecionar a opção "Import Data" e depois "From URL" e botar o link [http://localhost:8080/v2/api-docs](http://localhost:8080/v2/api-docs) para ser importado todos os endpoints para sua Workspace.
 
 ## Dependências utilizadas
 - [Spring Boot](https://spring.io/projects/spring-boot)
 - [Spring Web](https://docs.spring.io/spring-boot/docs/2.2.6.RELEASE/reference/htmlsingle/#boot-features-developing-web-applications)
 - [Spring Data JPA](https://docs.spring.io/spring-boot/docs/2.2.6.RELEASE/reference/htmlsingle/#boot-features-jpa-and-spring-data)
+- [Spring Test](https://docs.spring.io/spring-boot/docs/2.2.6.RELEASE/reference/htmlsingle/#boot-features-testing)
 - [Swagger](https://swagger.io/)
 - [Lombok](https://projectlombok.org/)
 
