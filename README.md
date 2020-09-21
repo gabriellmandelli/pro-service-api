@@ -1,5 +1,5 @@
 # pro-service-api
-Projeto para 
+Sistema para controle de manutenção de equipamentos
 
 * Estrutura inicial criada no Lucidchart [Aqui](https://app.lucidchart.com/documents/view/6ea3307a-4101-428a-98a0-7faa121aaff1).
 * Veja o projeto desse repositório [Aqui](https://github.com/gabriellmandelli/pro-service-api/projects).
